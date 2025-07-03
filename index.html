@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testseite</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Willkommen auf der Testseite 🧪</h1>
+        
+        <p>Dies ist ein einfacher Absatz, um Textelemente zu testen.</p>
+        
+        <h2>Ein Formular zum Ausfüllen</h2>
+        <form id="testForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Gib deinen Namen ein"><br><br>
+            
+            <button type="button" class="button" onclick="sayHello()">Absenden</button>
+        </form>
+        
+        <p id="message"></p>
+        
+        <h2>Eine Liste</h2>
+        <ul>
+            <li>Listenelement 1</li>
+            <li>Listenelement 2</li>
+            <li>Listenelement 3</li>
+        </ul>
+    </div>
+
+    <script>
+        function sayHello() {
+            const name = document.getElementById('name').value;
+            const messageElement = document.getElementById('message');
+            
+            if (name) {
+                messageElement.textContent = 'Hallo, ' + name + '! 👋';
+            } else {
+                messageElement.textContent = 'Bitte gib zuerst deinen Namen ein.';
+            }
+        }
+    </script>
+
+</body>
+</html>
