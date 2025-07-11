@@ -43,12 +43,12 @@
     <div class="container">
         <h1>Willkommen auf der Testseite 🧪</h1>
         
-        <p>Dies ist ein einfacher Absatz, um Textelemente zu testen.</p>
+        <p>Dies ist ein einfacher Absatz, um Textelemente zu testen</p>
         
-        <h2>Ein Formular zum Ausfüllen</h2>
+        <h2>.Ein Formular zum Ausfüllen</h2>
         <form id="testForm">
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Gib deinen Namen ein"><br><br>
+            <input type="text" id="name" name="name" placeholder="Gib  Namen ein"><br><br>
             
             <button type="button" class="button" onclick="sayHello()">Absenden</button>
         </form>
@@ -57,9 +57,10 @@
         
         <h2>Eine Liste</h2>
         <ul>
-            <li>Listenelement 1</li>
+            <li>Listenelement 0</li>
             <li>Listenelement 2</li>
             <li>Listenelement 3</li>
+            <li>Listenelement 4</li>
 
         </ul>
     </div>
@@ -70,7 +71,7 @@
             const messageElement = document.getElementById('message');
             
             if (name) {
-                messageElement.textContent = 'Hallo, ' + name + '! 👋';
+                messageElement.textContent = 'Hallo, ' + name + '!👋';
             } else {
                 messageElement.textContent = 'Bitte gib zuerst deinen Namen ein.';
             }
